@@ -1,3 +1,11 @@
+# File name : Streamer.py
+# Technologies included : python, MongoDB
+# Description : This file renders the live tweets from the twitter API and stores it in a MongoDB
+# Use : Data Analytics
+# Author: HemathKumar.R
+# License : None
+
+
 # Importing necessary Modules
 
 from __future__ import absolute_import, print_function     # Basic Import (Not Necessary)
