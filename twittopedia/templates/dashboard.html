@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Title</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width" initial-scale = "1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/dashboard/style.css')}}">
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/dashboard/font-awesome.css')}}">
+
+    <link href="{{url_for('static',filename='css/index/bootstrap.min.css')}}" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar">
+        <span class="header">Twittopedia</span>
+        <ul class="navbar-nav">
+            <li><button class="btn btn-primary">Logout</button></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="main-container">
+        <div id="chart">
+            <div style="text-align: center;" class="alert alert-info">Click 'Fetch' button to fetch Hashtags from twitter</div>
+            <div style="text-align: center;" class="alert alert-info">Click 'Analyze' button to analyze the fetched results</div>
+            <div style="text-align: center;" class="alert alert-info">Click 'Update' button to update the analyzed results</div>
+            <div style="text-align: center;" class="alert alert-info">Click 'view' button to see the last results</div>
+        </div>
+        <div class="button-group">
+            <button id="fetch" class="btn btn-info">Fetch</button>
+            <button id="analyze" class="btn btn-warning">Analyze</button>
+            <button id="update" class="btn btn-secondary">Update</button>
+            <button id="view" class="btn btn-success">View</button>
+        </div>
+    </div>
+</body>
+
+<script src="{{url_for('static', filename='js/jquery/jquery.min.js')}}"></script>
+
+<script type="text/javascript" src="{{url_for('static', filename='js/dashboard/dashboard.js')}}"></script>
+
+<script src="{{url_for('static', filename='js/sweetalert.min.js')}}"></script>
+
+<script src="{{url_for('static', filename='js/dashboard/highcharts.js')}}"></script>
+
+<script src="{{url_for('static', filename='js/dashboard/chart.js')}}"></script>
+
+</html>
