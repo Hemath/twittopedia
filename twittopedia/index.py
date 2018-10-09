@@ -40,6 +40,8 @@ def connect_database(host,database,collection):
 
 	return mycol
 
+# All the cllections returned from the Above Function
+
 users_collection = connect_database(Database_Host, Database_Name, "users")
 
 load_collection = connect_database(Database_Host, Database_Name, "hashtags")
@@ -268,6 +270,8 @@ def update():
 
 @app.route("/fetch", methods=["POST"])
 def fetch():
+	
+	#Ugly Hard Code, It will be altered during its deployment
 
 	print("Fetching....")
 
